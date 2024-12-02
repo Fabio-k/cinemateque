@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   end
 
   resources :movies, only: [:index, :new, :create]
+
+  namespace :api do
+    namespace :V1 do
+      get 'detalhes-cinema', to: 'movies_theaters#details',  on: :member
+    end
+  end
 end
