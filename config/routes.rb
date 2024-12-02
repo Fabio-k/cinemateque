@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     get 'detalhes', to: 'movie_theaters#details', as: 'movie_details'
   end
 
-  resources :actors, only: [:new, :show, :create]
-  resources :roles, only: [:new, :create]
+  resources :actors, only: [:new, :show, :create] do
+    resources :roles, only: [:new, :create]
+  end
 end
