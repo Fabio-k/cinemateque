@@ -14,9 +14,7 @@ Rails.application.routes.draw do
 
   resources :movies, only: [:index, :new, :create]
 
-  namespace :api do
-    namespace :V1 do
-      get 'detalhes-cinema', to: 'movies_theaters#details',  on: :member
-    end
+  scope '/api/v1' do
+    get 'detalhes', to: 'movie_theaters#details', as: 'movie_details'
   end
 end
