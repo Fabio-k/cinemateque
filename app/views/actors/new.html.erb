@@ -1,0 +1,15 @@
+<%= form_with model: @actor do |f|%>
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name%>
+    </div>
+    <div>
+        <%= f.label :nacionality%>
+         <%= f.text_field :nacionality%>
+    </div>
+    <div>
+        <%= f.label :birth_date%>
+        <%= f.date_field :birth_date%>
+    </div> 
+    <%= f.submit 'Salvar'%>
+<% end %>

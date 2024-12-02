@@ -10,6 +10,7 @@ pt-BR:
       movie:
         one: Filme
         other: Filmes
+      actor: Ator
     attributes:
       movie_theater:
         name: Nome
@@ -22,4 +23,7 @@ pt-BR:
         year: Ano
         director: Direção
         plot: Enredo
-
+      actor:
+        name: Nome
+        nacionality: Nacionalidade
+        birth_date: Data de Nascimento

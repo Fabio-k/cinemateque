@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   scope '/api/v1' do
     get 'detalhes', to: 'movie_theaters#details', as: 'movie_details'
   end
+
+  resources :actors, only: [:new, :show, :create]
+  resources :roles, only: [:new, :create]
 end

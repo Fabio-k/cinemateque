@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :movie do
-    title { "MyString" }
-    year { 1 }
+    title { "The interview" }
+    year { 2000 }
     plot { "MyText" }
     director { "MyString" }
   end

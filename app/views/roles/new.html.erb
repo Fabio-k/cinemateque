@@ -1,0 +1,11 @@
+<%= form_with model: @role do |f|%>
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name%>
+    </div>
+    <div>
+        <%= f.label :movie%>
+        <%= f.collection_select :movie, @movies, :id, :title%>
+    </div>
+    <%= f.submit 'Salvar'%>
+<% end %>
